@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign up for Narnix</title>
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/signup.css"> 
+    </head>
+    <body>
+        <div class="wrapper">
+	<div class="container">
+        <form class="form" action="PartnerServlet" method="post">
+        
+            <h1>Sign Up Form</h1>   
+<!--        <span class="all"><label>Select alliance</label></span>
+            <div id="sel1"> <select style="VERTICAL-ALIGN: middle; WIDTH: 99px" name="alliance">
+                <option >Employee</option>
+                <option >Partner</option></select>    
+            </div>
+            
+            <span class="div"><label> Select division</label></span>
+            <div id="sel2"><select style="VERTICAL-ALIGN: middle; WIDTH: 99px" name="division">
+                <option >Technolabs</option>
+                <option >Megamart</option>
+                <option >Sq-My</option></select>
+            </div>-->
+        
+             <input type="text" name="name" placeholder="First Name" required>
+         <input type="text" name="lastname" placeholder="Last Name" required>
+         <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+        
+        <span id="forg">By creating an account you agree to our <a href="html/terms.html">Terms & Privacy</a>.</span>
+        <span id="forg">Return to <a href="index.html">Homepage</a></span>
+            
+        <input type="hidden" name="action" value="Signup">
+        </form>
+	</div>
+	
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+        </div>
+    </body>
+</html>

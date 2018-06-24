@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reset Narnix Password</title>
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/resetpass.css">
+        <!--<script>window.history.forward(1);</script>-->
+    <script>
+            var check = function() {
+  if (document.getElementById('password').value ==
+    document.getElementById('confirm_password').value) {
+    document.getElementById('message').innerHTML = '';
+   } else {
+    document.getElementById('message').innerHTML = 'New passwords should match.';
+      }}
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+	<div class="container">
+	<form class="form" action="partnerresetpass" method="post">
+        <h1>Reset Password</h1>
+<!--	    <span class="all"><label>Select alliance</label></span>
+            <div id="sel1"> <select style="VERTICAL-ALIGN: middle; WIDTH: 99px" name="alliance">
+                <option>Employee</option>
+                <option>Partner</option></select>    
+            </div>
+            
+            <span class="div"><label> Select division</label></span>
+            <div id="sel2"><select style="VERTICAL-ALIGN: middle; WIDTH: 99px" name="division">
+                <option>Technolabs</option>
+                <option>Megamart</option>
+                <option>Sq-My</option></select>
+            </div>
+            -->
+            <input type="password" name="password" id="password" onkeyup='check();' placeholder="New Password" required>
+            <input type="password" name="password1" id="confirm_password" onkeyup='check();' placeholder=" New Password Again" required>
+            <button type="submit">Submit</button><br><br>
+         <span id='message'></span><br>
+            </form>
+	</div>
+	
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+        </div>
+    </body>
+</html>
